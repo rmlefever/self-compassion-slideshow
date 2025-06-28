@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice – Self-Compassion Break</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-subtitle {
+      color: #4A7C7E;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .practice-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    
+    .practice-steps {
+      flex: 3;
+    }
+    
+    .practice-tips {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .step-box {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .step-blue {
+      background-color: rgba(127, 179, 211, 0.15);
+      border-left: 5px solid #7FB3D3;
+    }
+    
+    .step-green {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-left: 5px solid #A8C09A;
+    }
+    
+    .step-coral {
+      background-color: rgba(244, 166, 166, 0.15);
+      border-left: 5px solid #F4A6A6;
+    }
+    
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 20px;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .number-blue {
+      background-color: #7FB3D3;
+      color: white;
+    }
+    
+    .number-green {
+      background-color: #A8C09A;
+      color: white;
+    }
+    
+    .number-coral {
+      background-color: #F4A6A6;
+      color: white;
+    }
+    
+    .step-content {
+      flex: 1;
+    }
+    
+    .step-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .step-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .step-phrase {
+      font-style: italic;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    
+    .tips-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+    
+    .tips-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #4A7C7E;
+      font-size: 20px;
+    }
+    
+    .tips-title i {
+      margin-right: 10px;
+      color: #4A7C7E;
+    }
+    
+    .tips-text {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    
+    .tips-list {
+      margin-left: 25px;
+      list-style-type: disc;
+    }
+    
+    .tips-list li {
+      margin-bottom: 10px;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/gentle_sunlight.jpg" alt="Gentle sunlight background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Practice – Self-Compassion Break</h1>
+      <h2 class="slide-subtitle">Developed by Dr. Kristin Neff</h2>
+    </div>
+    
+    <div class="slide-content">
+      <p class="slide-text">The Self-Compassion Break is a brief practice that incorporates all three elements of self-compassion. It can be used in any moment of difficulty, from minor stress to intense suffering.</p>
+      
+      <div class="practice-container">
+        <div class="practice-steps">
+          <div class="step-box step-blue">
+            <div class="step-number number-blue">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Mindfulness</h3>
+              <p class="step-text">Acknowledge that you're experiencing suffering. Place your hand on your heart if you wish, and feel the warmth and gentle touch of your hand.</p>
+              <p class="step-phrase">"This is a moment of suffering."</p>
+            </div>
+          </div>
+          
+          <div class="step-box step-green">
+            <div class="step-number number-green">2</div>
+            <div class="step-content">
+              <h3 class="step-title">Common Humanity</h3>
+              <p class="step-text">Remind yourself that suffering is part of life and something we all experience. You are not alone in your struggle.</p>
+              <p class="step-phrase">"Suffering is part of life. Many others feel this way."</p>
+            </div>
+          </div>
+          
+          <div class="step-box step-coral">
+            <div class="step-number number-coral">3</div>
+            <div class="step-content">
+              <h3 class="step-title">Self-Kindness</h3>
+              <p class="step-text">Offer yourself kindness and support. Ask yourself: "What do I need to hear right now to express kindness to myself?"</p>
+              <p class="step-phrase">"May I be kind to myself in this moment."</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="practice-tips">
+          <div class="tips-box">
+            <h3 class="tips-title">
+              <i class="fas fa-hand-holding-heart"></i>
+              Physical Gestures
+            </h3>
+            <p class="tips-text">Adding a physical gesture can enhance the practice:</p>
+            <ul class="tips-list">
+              <li>Place a hand over your heart</li>
+              <li>Hold your own hand</li>
+              <li>Place both hands on your belly</li>
+              <li>Gently touch your cheek</li>
+            </ul>
+          </div>
+          
+          <div class="tips-box">
+            <h3 class="tips-title">
+              <i class="fas fa-lightbulb"></i>
+              Helpful Tips
+            </h3>
+            <p class="tips-text">To make this practice more effective:</p>
+            <ul class="tips-list">
+              <li>Personalize the phrases to feel authentic</li>
+              <li>Start with small difficulties before big ones</li>
+              <li>Practice regularly, not just in crisis</li>
+              <li>Be patient with yourself as you learn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

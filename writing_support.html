@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optional Writing Support</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .intro-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    
+    .support-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    
+    .support-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .support-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .support-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #4A7C7E;
+      font-size: 22px;
+    }
+    
+    .support-title i {
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(74, 124, 126, 0.1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4A7C7E;
+    }
+    
+    .support-text {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .template-box {
+      background-color: rgba(127, 179, 211, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .template-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #7FB3D3;
+      font-size: 20px;
+    }
+    
+    .template-text {
+      font-size: 18px;
+      line-height: 1.5;
+      font-style: italic;
+      color: #4A7C7E;
+    }
+    
+    .template-blank {
+      display: inline-block;
+      width: 100px;
+      height: 2px;
+      background-color: #A8C09A;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    
+    .alternatives-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .alternative-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .alternative-icon {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(244, 166, 166, 0.1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+      color: #F4A6A6;
+    }
+    
+    .alternative-content {
+      flex: 1;
+    }
+    
+    .alternative-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #4A7C7E;
+    }
+    
+    .alternative-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .reminder-box {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-left: 5px solid #A8C09A;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    
+    .reminder-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #4A7C7E;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .reminder-title i {
+      margin-right: 10px;
+      color: #A8C09A;
+    }
+    
+    .reminder-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/soft_clouds.jpg" alt="Soft clouds background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Optional Writing Support</h1>
+    </div>
+    
+    <div class="slide-content">
+      <p class="intro-text">If you find the compassionate letter writing challenging, here are some additional supports to help you access your self-compassionate voice.</p>
+      
+      <div class="support-container">
+        <div class="support-column">
+          <div class="support-box">
+            <h3 class="support-title">
+              <i class="fas fa-file-alt"></i>
+              Sentence Starters
+            </h3>
+            <p class="support-text">If you're having trouble getting started, try filling in these sentence starters:</p>
+            
+            <div class="template-box">
+              <h4 class="template-title">Template</h4>
+              <p class="template-text">Dear <span class="template-blank"></span>,</p>
+              <p class="template-text">I notice you're struggling with <span class="template-blank"></span>.</p>
+              <p class="template-text">It makes sense that you feel <span class="template-blank"></span> because <span class="template-blank"></span>.</p>
+              <p class="template-text">You're not alone in this. Many people <span class="template-blank"></span>.</p>
+              <p class="template-text">One thing I appreciate about you is <span class="template-blank"></span>.</p>
+              <p class="template-text">A kind thing you might try is <span class="template-blank"></span>.</p>
+              <p class="template-text">With compassion,<br><span class="template-blank"></span></p>
+            </div>
+          </div>
+          
+          <div class="reminder-box">
+            <h3 class="reminder-title">
+              <i class="fas fa-heart"></i>
+              Gentle Reminder
+            </h3>
+            <p class="reminder-text">This letter is just for you. There's no right or wrong way to write it. The most important thing is that it feels supportive and kind to you.</p>
+          </div>
+        </div>
+        
+        <div class="support-column">
+          <div class="support-box">
+            <h3 class="support-title">
+              <i class="fas fa-lightbulb"></i>
+              Alternative Approaches
+            </h3>
+            <p class="support-text">If writing doesn't feel comfortable, try one of these alternatives:</p>
+            
+            <ul class="alternatives-list">
+              <li class="alternative-item">
+                <div class="alternative-icon">
+                  <i class="fas fa-microphone"></i>
+                </div>
+                <div class="alternative-content">
+                  <h4 class="alternative-title">Audio Recording</h4>
+                  <p class="alternative-description">Record yourself speaking compassionately, as if talking to a friend. Listen back to receive the compassion.</p>
+                </div>
+              </li>
+              
+              <li class="alternative-item">
+                <div class="alternative-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="alternative-content">
+                  <h4 class="alternative-title">Visual Expression</h4>
+                  <p class="alternative-description">Draw or create a visual representation of compassion. Use colors, shapes, or symbols that feel supportive.</p>
+                </div>
+              </li>
+              
+              <li class="alternative-item">
+                <div class="alternative-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="alternative-content">
+                  <h4 class="alternative-title">Compassionate Dialogue</h4>
+                  <p class="alternative-description">Imagine a conversation between your critical voice and your compassionate voice. What would each say?</p>
+                </div>
+              </li>
+              
+              <li class="alternative-item">
+                <div class="alternative-icon">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="alternative-content">
+                  <h4 class="alternative-title">Physical Gesture</h4>
+                  <p class="alternative-description">Place a hand on your heart and speak or think compassionate phrases while feeling the warmth of your hand.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

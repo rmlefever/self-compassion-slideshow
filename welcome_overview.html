@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome & Session Overview</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .welcome-message {
+      font-size: 24px;
+      color: #4A7C7E;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    
+    .list-item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .list-item i {
+      color: #7FB3D3;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 20px;
+    }
+    
+    .list-content {
+      flex: 1;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      color: #4A7C7E;
+      text-align: center;
+      margin: 40px 0;
+      padding: 0 100px;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.1;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/soft_clouds.jpg" alt="Soft clouds background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Welcome & Session Overview</h1>
+    </div>
+    
+    <div class="slide-content">
+      <p class="welcome-message">Welcome to a space of kindness, understanding, and growth.</p>
+      
+      <div class="list-item">
+        <i class="fas fa-heart"></i>
+        <div class="list-content">
+          <p class="slide-text">In this session, we'll explore how our inner voice shapes our experience and learn practical ways to cultivate a more compassionate relationship with ourselves.</p>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <i class="fas fa-comments"></i>
+        <div class="list-content">
+          <p class="slide-text">This is a safe, non-judgmental space. You're invited to participate at your comfort level and take care of your needs throughout our time together.</p>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <i class="fas fa-seedling"></i>
+        <div class="list-content">
+          <p class="slide-text">Self-compassion is a skill that can be learned and developed with practice. Today is just the beginning of what can be a transformative journey.</p>
+        </div>
+      </div>
+      
+      <p class="quote">"With self-compassion, we give ourselves the same kindness and care we'd give to a good friend."<br>— Kristin Neff</p>
+    </div>
+  </div>
+</body>
+</html>
+

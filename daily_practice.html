@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a Daily Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .intro-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    
+    .practices-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    .practice-card {
+      width: 31%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .practice-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .practice-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .icon-blue {
+      background-color: rgba(127, 179, 211, 0.2);
+      color: #7FB3D3;
+    }
+    
+    .icon-green {
+      background-color: rgba(168, 192, 154, 0.2);
+      color: #A8C09A;
+    }
+    
+    .icon-coral {
+      background-color: rgba(244, 166, 166, 0.2);
+      color: #F4A6A6;
+    }
+    
+    .practice-title {
+      font-weight: 600;
+      font-size: 20px;
+      color: #4A7C7E;
+    }
+    
+    .practice-description {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+    
+    .practice-tip {
+      font-style: italic;
+      font-size: 14px;
+      color: #666666;
+      border-top: 1px solid #E8E6E3;
+      padding-top: 10px;
+    }
+    
+    .reminder-box {
+      background-color: rgba(74, 124, 126, 0.1);
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .reminder-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #4A7C7E;
+      font-size: 22px;
+    }
+    
+    .reminder-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/peaceful_forest.jpg" alt="Peaceful forest background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Building a Daily Practice</h1>
+    </div>
+    
+    <div class="slide-content">
+      <p class="intro-text">Self-compassion is like a muscle that grows stronger with regular practice. Here are simple ways to incorporate self-compassion into your daily life.</p>
+      
+      <div class="practices-container">
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-blue">
+              <i class="fas fa-bell fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Mindful Check-In</h3>
+          </div>
+          <p class="practice-description">Set a reminder to pause briefly throughout the day. Notice how you're feeling without judgment, and offer yourself a moment of kindness.</p>
+          <p class="practice-tip">Try setting 3 alarms on your phone as reminders.</p>
+        </div>
+        
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-green">
+              <i class="fas fa-hand-holding-heart fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Self-Compassion Break</h3>
+          </div>
+          <p class="practice-description">Practice the 3-step self-compassion break whenever you notice you're struggling. Just 30 seconds can shift your perspective.</p>
+          <p class="practice-tip">Keep the 3 phrases written on a small card or as a phone wallpaper.</p>
+        </div>
+        
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-coral">
+              <i class="fas fa-comment fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Kind Self-Talk</h3>
+          </div>
+          <p class="practice-description">Notice your inner dialogue. When you catch self-criticism, pause and ask: "How would I speak to a friend in this situation?"</p>
+          <p class="practice-tip">Practice rephrasing critical thoughts with kindness.</p>
+        </div>
+        
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-blue">
+              <i class="fas fa-bed fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Bedtime Reflection</h3>
+          </div>
+          <p class="practice-description">Before sleep, reflect on moments of difficulty during your day and offer yourself compassion for those challenges.</p>
+          <p class="practice-tip">Place a hand on your heart as you do this reflection.</p>
+        </div>
+        
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-green">
+              <i class="fas fa-users fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Common Humanity Reminder</h3>
+          </div>
+          <p class="practice-description">When feeling isolated in your struggles, remind yourself: "Many others feel this way too. I'm not alone in this experience."</p>
+          <p class="practice-tip">Notice others around you who might be having similar feelings.</p>
+        </div>
+        
+        <div class="practice-card">
+          <div class="practice-header">
+            <div class="practice-icon icon-coral">
+              <i class="fas fa-journal-whills fa-lg"></i>
+            </div>
+            <h3 class="practice-title">Compassion Journal</h3>
+          </div>
+          <p class="practice-description">Keep a journal where you write to yourself with kindness about difficult experiences, celebrating small wins and acknowledging challenges.</p>
+          <p class="practice-tip">Even just 5 minutes of writing can be beneficial.</p>
+        </div>
+      </div>
+      
+      <div class="reminder-box">
+        <h3 class="reminder-title">Remember</h3>
+        <p class="reminder-text">Self-compassion is a practice, not perfection. Be patient with yourself as you develop this skill. Even small moments of kindness toward yourself make a difference.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

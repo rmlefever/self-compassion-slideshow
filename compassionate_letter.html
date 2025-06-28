@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity – The Compassionate Letter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    
+    .content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .activity-box {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-left: 5px solid #A8C09A;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .activity-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #4A7C7E;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .activity-title i {
+      margin-right: 10px;
+      color: #A8C09A;
+    }
+    
+    .steps-list {
+      counter-reset: step-counter;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .step-item {
+      counter-increment: step-counter;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .step-number {
+      background-color: #A8C09A;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .step-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .prompts-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+    
+    .prompts-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #4A7C7E;
+      font-size: 20px;
+    }
+    
+    .prompt-item {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      border-left: 3px solid #A8C09A;
+      font-style: italic;
+      color: #4A7C7E;
+      font-size: 18px;
+    }
+    
+    .tips-box {
+      background-color: rgba(127, 179, 211, 0.15);
+      border-left: 5px solid #7FB3D3;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .tips-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #4A7C7E;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .tips-title i {
+      margin-right: 10px;
+      color: #7FB3D3;
+    }
+    
+    .tips-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .tips-item {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .tips-icon {
+      color: #7FB3D3;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+    
+    .tips-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .letter-image {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .letter-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/peaceful_forest.jpg" alt="Peaceful forest background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Activity – The Compassionate Letter</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="content-left">
+        <p class="slide-text">Writing a compassionate letter to yourself is a powerful way to practice self-compassion. This exercise helps you access your inner compassionate voice.</p>
+        
+        <div class="activity-box">
+          <h3 class="activity-title">
+            <i class="fas fa-pen-fancy"></i>
+            Writing Instructions
+          </h3>
+          
+          <ol class="steps-list">
+            <li class="step-item">
+              <div class="step-number">1</div>
+              <p class="step-text">Think of something you're struggling with or feeling self-critical about.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-number">2</div>
+              <p class="step-text">Imagine a kind, wise, compassionate friend who knows you well, including your strengths and weaknesses.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-number">3</div>
+              <p class="step-text">Write a letter to yourself from the perspective of this compassionate friend.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-number">4</div>
+              <p class="step-text">After writing, put the letter aside. Return to it later and allow yourself to receive the compassion.</p>
+            </li>
+          </ol>
+        </div>
+        
+        <div class="prompts-box">
+          <h3 class="prompts-title">Helpful Sentence Starters</h3>
+          
+          <p class="prompt-item">"I understand that you're feeling... because..."</p>
+          <p class="prompt-item">"It makes sense that you would feel this way because..."</p>
+          <p class="prompt-item">"You're not alone in this. Many people experience..."</p>
+          <p class="prompt-item">"You're doing your best, and I appreciate how you..."</p>
+          <p class="prompt-item">"One thing you might consider is..."</p>
+        </div>
+      </div>
+      
+      <div class="content-right">
+        <div class="letter-image">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIExldHRlciBiYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHg9IjUwIiB5PSIyMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI0U4RTZFMyIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iNSIgcnk9IjUiLz4KICAKICA8IS0tIExldHRlciBsaW5lcyAtLT4KICA8bGluZSB4MT0iODAiIHkxPSI2MCIgeDI9IjMyMCIgeTI9IjYwIiBzdHJva2U9IiNGNEE2QTYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iOTAiIHgyPSIzMjAiIHkyPSI5MCIgc3Ryb2tlPSIjRjRBNkE2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcnJheT0iNSwyIi8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iMTIwIiB4Mj0iMzIwIiB5Mj0iMTIwIiBzdHJva2U9IiNGNEE2QTYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtZGFzaGFycmF5PSI1LDIiLz4KICA8bGluZSB4MT0iODAiIHkxPSIxNTAiIHgyPSIzMjAiIHkyPSIxNTAiIHN0cm9rZT0iI0Y0QTZBNiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1kYXNoYXJyYXk9IjUsMiIvPgogIAogIDwhLS0gSGVhcnQgZGVjb3JhdGlvbiAtLT4KICA8cGF0aCBkPSJNNTAsNDAgQzUwLDQwIDYwLDIwIDgwLDQwIEM5NSw1NSA1MCw4MCA1MCw4MCBDNTAsODAgNSw1NSAyMCw0MCBDNDUsMTUgNTAsNDAgNTAsNDAiIGZpbGw9IiNGNEE2QTYiIHN0cm9rZT0iI0Y0QTZBNiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgCiAgPCEtLSBQZW4gZGVjb3JhdGlvbiAtLT4KICA8cGF0aCBkPSJNMzQwLDE3MCBMMzYwLDE1MCBMMzgwLDE3MCBMMzYwLDE5MCBaIiBmaWxsPSIjN0ZCM0QzIiBzdHJva2U9IiM3RkIzRDMiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSIzNjAiIHkxPSIxNTAiIHgyPSIzNjAiIHkyPSIxOTAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSIzNDAiIHkxPSIxNzAiIHgyPSIzODAiIHkyPSIxNzAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4K" alt="Compassionate letter illustration">
+        </div>
+        
+        <div class="tips-box">
+          <h3 class="tips-title">
+            <i class="fas fa-lightbulb"></i>
+            Helpful Tips
+          </h3>
+          
+          <ul class="tips-list">
+            <li class="tips-item">
+              <i class="fas fa-check-circle tips-icon"></i>
+              <p class="tips-text">Write in the second person (using "you") to create distance from self-criticism.</p>
+            </li>
+            <li class="tips-item">
+              <i class="fas fa-check-circle tips-icon"></i>
+              <p class="tips-text">Include understanding, validation, and encouragement in your letter.</p>
+            </li>
+            <li class="tips-item">
+              <i class="fas fa-check-circle tips-icon"></i>
+              <p class="tips-text">Be specific about the situation you're addressing.</p>
+            </li>
+            <li class="tips-item">
+              <i class="fas fa-check-circle tips-icon"></i>
+              <p class="tips-text">Remember that this letter is just for you—no one else needs to see it.</p>
+            </li>
+            <li class="tips-item">
+              <i class="fas fa-check-circle tips-icon"></i>
+              <p class="tips-text">If writing is difficult, you can draw, speak aloud, or record your compassionate message.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

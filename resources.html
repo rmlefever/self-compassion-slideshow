@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources for Continued Learning</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .intro-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+    
+    .resource-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .resource-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #4A7C7E;
+      font-size: 20px;
+    }
+    
+    .resource-title i {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      background-color: rgba(74, 124, 126, 0.1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4A7C7E;
+    }
+    
+    .resource-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .resource-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .resource-icon {
+      color: #7FB3D3;
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+    
+    .resource-content {
+      flex: 1;
+    }
+    
+    .resource-name {
+      font-weight: 600;
+      margin-bottom: 2px;
+      font-size: 16px;
+    }
+    
+    .resource-description {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #666666;
+    }
+    
+    .note-box {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-left: 5px solid #A8C09A;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .note-icon {
+      margin-right: 15px;
+      color: #A8C09A;
+      font-size: 20px;
+    }
+    
+    .note-text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/soft_clouds.jpg" alt="Soft clouds background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Resources for Continued Learning</h1>
+    </div>
+    
+    <div class="slide-content">
+      <p class="intro-text">Continue your self-compassion journey with these resources for deeper exploration and practice.</p>
+      
+      <div class="resources-grid">
+        <div class="resource-box">
+          <h3 class="resource-title">
+            <i class="fas fa-book"></i>
+            Books
+          </h3>
+          
+          <ul class="resource-list">
+            <li class="resource-item">
+              <i class="fas fa-bookmark resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">"Self-Compassion" by Kristin Neff</h4>
+                <p class="resource-description">The foundational book on self-compassion research and practice.</p>
+              </div>
+            </li>
+            
+            <li class="resource-item">
+              <i class="fas fa-bookmark resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">"The Mindful Self-Compassion Workbook"</h4>
+                <p class="resource-description">By Kristin Neff and Christopher Germer – Practical exercises.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="resource-box">
+          <h3 class="resource-title">
+            <i class="fas fa-globe"></i>
+            Websites
+          </h3>
+          
+          <ul class="resource-list">
+            <li class="resource-item">
+              <i class="fas fa-link resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">self-compassion.org</h4>
+                <p class="resource-description">Kristin Neff's official site with free exercises and resources.</p>
+              </div>
+            </li>
+            
+            <li class="resource-item">
+              <i class="fas fa-link resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">centerformsc.org</h4>
+                <p class="resource-description">Center for Mindful Self-Compassion – Training programs.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="resource-box">
+          <h3 class="resource-title">
+            <i class="fas fa-mobile-alt"></i>
+            Apps & Audio
+          </h3>
+          
+          <ul class="resource-list">
+            <li class="resource-item">
+              <i class="fas fa-headphones resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">Insight Timer</h4>
+                <p class="resource-description">Free app with numerous self-compassion meditations.</p>
+              </div>
+            </li>
+            
+            <li class="resource-item">
+              <i class="fas fa-headphones resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">Self-Compassion.org Audio</h4>
+                <p class="resource-description">Free guided meditations on Kristin Neff's website.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="resource-box">
+          <h3 class="resource-title">
+            <i class="fas fa-users"></i>
+            Programs & Training
+          </h3>
+          
+          <ul class="resource-list">
+            <li class="resource-item">
+              <i class="fas fa-certificate resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">Mindful Self-Compassion (MSC) Course</h4>
+                <p class="resource-description">8-week structured program available in-person and online.</p>
+              </div>
+            </li>
+            
+            <li class="resource-item">
+              <i class="fas fa-certificate resource-icon"></i>
+              <div class="resource-content">
+                <h4 class="resource-name">Self-Compassion Workshops</h4>
+                <p class="resource-description">Shorter workshops and retreats offered worldwide.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="note-box">
+        <i class="fas fa-heart note-icon"></i>
+        <p class="note-text">Self-compassion is a journey, not a destination. Be patient with yourself as you explore these resources.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

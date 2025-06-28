@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Reflection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .intro-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    
+    .reflection-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    
+    .reflection-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .reflection-box {
+      background-color: rgba(127, 179, 211, 0.15);
+      border-left: 5px solid #7FB3D3;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+    
+    .reflection-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #4A7C7E;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .reflection-title i {
+      margin-right: 15px;
+      color: #7FB3D3;
+    }
+    
+    .question-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .question-item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .question-icon {
+      color: #7FB3D3;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    
+    .question-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .facilitation-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .facilitation-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #4A7C7E;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .facilitation-title i {
+      margin-right: 15px;
+      color: #A8C09A;
+    }
+    
+    .tip-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .tip-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .tip-icon {
+      color: #A8C09A;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    
+    .tip-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      color: #4A7C7E;
+      text-align: center;
+      margin: 30px 0;
+      padding: 0 100px;
+    }
+    
+    .quote-author {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/serene_mountain.jpg" alt="Serene mountain background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Group Reflection</h1>
+    </div>
+    
+    <div class="slide-content">
+      <p class="intro-text">Sharing our experiences with self-compassion can deepen our understanding and help us feel less alone in our practice. Consider these questions for group discussion.</p>
+      
+      <div class="reflection-container">
+        <div class="reflection-column">
+          <div class="reflection-box">
+            <h3 class="reflection-title">
+              <i class="fas fa-comments"></i>
+              Discussion Questions
+            </h3>
+            
+            <ul class="question-list">
+              <li class="question-item">
+                <i class="fas fa-question-circle question-icon"></i>
+                <p class="question-text">What was it like to practice self-compassion today? What feelings or thoughts came up?</p>
+              </li>
+              
+              <li class="question-item">
+                <i class="fas fa-question-circle question-icon"></i>
+                <p class="question-text">Which element of self-compassion (mindfulness, common humanity, or self-kindness) feels most natural to you? Which feels most challenging?</p>
+              </li>
+              
+              <li class="question-item">
+                <i class="fas fa-question-circle question-icon"></i>
+                <p class="question-text">What resistance or barriers do you notice when trying to be compassionate toward yourself?</p>
+              </li>
+              
+              <li class="question-item">
+                <i class="fas fa-question-circle question-icon"></i>
+                <p class="question-text">How might practicing self-compassion impact your daily life and relationships?</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="reflection-column">
+          <div class="facilitation-box">
+            <h3 class="facilitation-title">
+              <i class="fas fa-users"></i>
+              Facilitation Tips
+            </h3>
+            
+            <ul class="tip-list">
+              <li class="tip-item">
+                <i class="fas fa-check-circle tip-icon"></i>
+                <p class="tip-text">Remind participants that sharing is optional; they can pass at any time.</p>
+              </li>
+              
+              <li class="tip-item">
+                <i class="fas fa-check-circle tip-icon"></i>
+                <p class="tip-text">Acknowledge that self-compassion can bring up difficult emotions for some people.</p>
+              </li>
+              
+              <li class="tip-item">
+                <i class="fas fa-check-circle tip-icon"></i>
+                <p class="tip-text">Validate all experiences, whether positive, negative, or neutral.</p>
+              </li>
+              
+              <li class="tip-item">
+                <i class="fas fa-check-circle tip-icon"></i>
+                <p class="tip-text">Highlight common themes that emerge in the discussion.</p>
+              </li>
+              
+              <li class="tip-item">
+                <i class="fas fa-check-circle tip-icon"></i>
+                <p class="tip-text">Gently redirect if someone begins to give advice rather than sharing their own experience.</p>
+              </li>
+            </ul>
+          </div>
+          
+          <p class="quote">"When we give ourselves compassion, we are opening our hearts in a way that can transform our lives."</p>
+          <p class="quote-author">— Kristin Neff</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

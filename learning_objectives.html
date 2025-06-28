@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goals for Today</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .goals-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .goal-item {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      width: 45%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: flex-start;
+      min-height: 180px;
+    }
+    
+    .goal-icon {
+      background-color: #F9F7F4;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .goal-icon i {
+      font-size: 24px;
+    }
+    
+    .icon-blue {
+      color: #7FB3D3;
+    }
+    
+    .icon-green {
+      color: #A8C09A;
+    }
+    
+    .icon-coral {
+      color: #F4A6A6;
+    }
+    
+    .icon-teal {
+      color: #4A7C7E;
+    }
+    
+    .goal-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .goal-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/peaceful_forest.jpg" alt="Peaceful forest background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Goals for Today</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="goals-container">
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-comment-dots icon-blue"></i>
+          </div>
+          <div>
+            <h3 class="goal-title">Understand Self-Criticism</h3>
+            <p class="goal-text">Explore what self-criticism is, where it comes from, and how it impacts our wellbeing and recovery.</p>
+          </div>
+        </div>
+        
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-heart icon-coral"></i>
+          </div>
+          <div>
+            <h3 class="goal-title">Learn About Self-Compassion</h3>
+            <p class="goal-text">Discover the three elements of self-compassion and how they can transform your relationship with yourself.</p>
+          </div>
+        </div>
+        
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-microphone-alt icon-green"></i>
+          </div>
+          <div>
+            <h3 class="goal-title">Practice Shifting Your Inner Voice</h3>
+            <p class="goal-text">Experience practical exercises to help you recognize and transform your internal dialogue to one that is kinder.</p>
+          </div>
+        </div>
+        
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-seedling icon-teal"></i>
+          </div>
+          <div>
+            <h3 class="goal-title">Take Self-Compassion With You</h3>
+            <p class="goal-text">Learn simple techniques you can incorporate into your daily life to continue building your self-compassion practice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

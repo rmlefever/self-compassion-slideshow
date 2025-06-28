@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Self-Compassion?</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    
+    .content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .definition-box {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid #A8C09A;
+    }
+    
+    .definition-text {
+      font-size: 22px;
+      line-height: 1.5;
+      color: #4A7C7E;
+      font-weight: 600;
+      font-style: italic;
+    }
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+    }
+    
+    .comparison-table th {
+      background-color: #4A7C7E;
+      color: white;
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: 600;
+    }
+    
+    .comparison-table th:first-child {
+      border-top-left-radius: 10px;
+    }
+    
+    .comparison-table th:last-child {
+      border-top-right-radius: 10px;
+    }
+    
+    .comparison-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #E8E6E3;
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .comparison-table tr:nth-child(even) {
+      background-color: rgba(232, 230, 227, 0.3);
+    }
+    
+    .comparison-table tr:last-child td:first-child {
+      border-bottom-left-radius: 10px;
+    }
+    
+    .comparison-table tr:last-child td:last-child {
+      border-bottom-right-radius: 10px;
+    }
+    
+    .list-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .list-item i {
+      color: #A8C09A;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    
+    .list-content {
+      flex: 1;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/gentle_sunlight.jpg" alt="Gentle sunlight background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">What is Self-Compassion?</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="content-left">
+        <div class="definition-box">
+          <p class="definition-text">Self-compassion is treating yourself with the same kindness, concern, and support you'd show to a good friend.</p>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-check-circle"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Honest & Kind:</strong> Self-compassion acknowledges difficulties and responds with kindness rather than harsh judgment.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-check-circle"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Strength-Based:</strong> It's about courage to face our pain and take responsibility with kindness, not avoiding accountability.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-check-circle"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Scientifically Supported:</strong> Research shows self-compassion improves mental health, resilience, and motivation.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content-right">
+        <h3 style="font-size: 22px; color: #4A7C7E; margin-bottom: 15px; font-weight: 600;">What Self-Compassion Is & Isn't</h3>
+        
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Self-Compassion IS</th>
+              <th>Self-Compassion IS NOT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Taking responsibility with kindness</td>
+              <td>Making excuses for yourself</td>
+            </tr>
+            <tr>
+              <td>Motivating yourself with encouragement</td>
+              <td>Being complacent or lazy</td>
+            </tr>
+            <tr>
+              <td>Acknowledging shared humanity</td>
+              <td>Feeling sorry for yourself (self-pity)</td>
+            </tr>
+            <tr>
+              <td>Balanced awareness of emotions</td>
+              <td>Exaggerating or suppressing feelings</td>
+            </tr>
+            <tr>
+              <td>Valuing yourself unconditionally</td>
+              <td>Valuing yourself based on achievements</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

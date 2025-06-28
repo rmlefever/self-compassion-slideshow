@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Takeaways</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+    }
+    
+    .slide-title {
+      color: #4A7C7E;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .takeaways-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .takeaway-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .takeaway-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      flex-shrink: 0;
+    }
+    
+    .icon-blue {
+      background-color: rgba(127, 179, 211, 0.2);
+      color: #7FB3D3;
+    }
+    
+    .icon-green {
+      background-color: rgba(168, 192, 154, 0.2);
+      color: #A8C09A;
+    }
+    
+    .icon-coral {
+      background-color: rgba(244, 166, 166, 0.2);
+      color: #F4A6A6;
+    }
+    
+    .icon-teal {
+      background-color: rgba(74, 124, 126, 0.2);
+      color: #4A7C7E;
+    }
+    
+    .takeaway-content {
+      flex: 1;
+    }
+    
+    .takeaway-title {
+      font-weight: 600;
+      font-size: 24px;
+      color: #4A7C7E;
+      margin-bottom: 10px;
+    }
+    
+    .takeaway-description {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      color: #4A7C7E;
+      text-align: center;
+      margin: 40px 0 20px;
+      padding: 0 100px;
+    }
+    
+    .quote-author {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <img src="./backgrounds/serene_mountain.jpg" alt="Serene mountain background" class="background-image">
+    
+    <div class="slide-header">
+      <h1 class="slide-title">Key Takeaways</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="takeaways-container">
+        <div class="takeaway-item">
+          <div class="takeaway-icon icon-coral">
+            <i class="fas fa-heart fa-2x"></i>
+          </div>
+          <div class="takeaway-content">
+            <h3 class="takeaway-title">Self-Compassion Is a Skill</h3>
+            <p class="takeaway-description">Like any skill, self-compassion can be learned and strengthened with practice. It's not about being perfect, but about showing up for yourself with kindness again and again.</p>
+          </div>
+        </div>
+        
+        <div class="takeaway-item">
+          <div class="takeaway-icon icon-blue">
+            <i class="fas fa-brain fa-2x"></i>
+          </div>
+          <div class="takeaway-content">
+            <h3 class="takeaway-title">Three Elements Work Together</h3>
+            <p class="takeaway-description">Mindfulness helps us recognize our suffering, common humanity connects us to others, and self-kindness offers the warmth and support we need. All three components work together to create true self-compassion.</p>
+          </div>
+        </div>
+        
+        <div class="takeaway-item">
+          <div class="takeaway-icon icon-green">
+            <i class="fas fa-seedling fa-2x"></i>
+          </div>
+          <div class="takeaway-content">
+            <h3 class="takeaway-title">Small Practices Make a Difference</h3>
+            <p class="takeaway-description">Even brief moments of self-compassion throughout your day can gradually transform your relationship with yourself. Start with small, manageable practices and build from there.</p>
+          </div>
+        </div>
+        
+        <div class="takeaway-item">
+          <div class="takeaway-icon icon-teal">
+            <i class="fas fa-hand-holding-heart fa-2x"></i>
+          </div>
+          <div class="takeaway-content">
+            <h3 class="takeaway-title">Self-Compassion Builds Resilience</h3>
+            <p class="takeaway-description">Research shows that self-compassion helps us bounce back from difficulties, reduces anxiety and depression, and supports our overall wellbeing and recovery.</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="quote">"Self-compassion is not self-indulgence, it is self-wisdom."</p>
+      <p class="quote-author">— Kristin Neff</p>
+    </div>
+  </div>
+</body>
+</html>
+

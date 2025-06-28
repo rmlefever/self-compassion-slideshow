@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness – Recognizing Suffering</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .component-icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    
+    .slide-title {
+      color: #7FB3D3;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    
+    .content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .mindfulness-box {
+      background-color: rgba(127, 179, 211, 0.15);
+      border-left: 5px solid #7FB3D3;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .mindfulness-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #7FB3D3;
+      font-size: 22px;
+    }
+    
+    .list-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .list-item i {
+      color: #7FB3D3;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    
+    .list-content {
+      flex: 1;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      color: #4A7C7E;
+      margin: 20px 0;
+      padding: 0 20px;
+      border-left: 3px solid #7FB3D3;
+    }
+    
+    .practice-tip {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-top: 20px;
+    }
+    
+    .practice-tip-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #4A7C7E;
+      font-size: 20px;
+    }
+    
+    .practice-tip-title i {
+      margin-right: 10px;
+      color: #7FB3D3;
+    }
+    
+    .practice-tip-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .mindful-vs-over {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .mindful-vs-over th {
+      background-color: #7FB3D3;
+      color: white;
+      padding: 12px 15px;
+      text-align: center;
+      font-weight: 600;
+    }
+    
+    .mindful-vs-over td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #E8E6E3;
+    }
+    
+    .mindful-vs-over tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .mindful-vs-over tr:nth-child(odd) td {
+      background-color: rgba(127, 179, 211, 0.05);
+    }
+    
+    .mindful-vs-over tr:nth-child(even) td {
+      background-color: rgba(127, 179, 211, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="slide-header">
+      <img src="./icons/mindfulness_icon.png" alt="Mindfulness icon" class="component-icon">
+      <h1 class="slide-title">Mindfulness – Recognizing Suffering</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="content-left">
+        <p class="slide-text">Mindfulness is the first component of self-compassion. It involves noticing and acknowledging our pain without exaggerating or suppressing it.</p>
+        
+        <div class="mindfulness-box">
+          <h3 class="mindfulness-title">What is Mindfulness?</h3>
+          <p class="slide-text">A non-judgmental awareness of the present moment, including our thoughts, feelings, and bodily sensations, without trying to change or fix them.</p>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-eye"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Awareness:</strong> We must first notice our suffering before we can respond with compassion.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-balance-scale"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Balance:</strong> Mindfulness helps us avoid both suppressing our feelings and becoming overwhelmed by them.</p>
+          </div>
+        </div>
+        
+        <p class="quote">"This is a moment of suffering."</p>
+      </div>
+      
+      <div class="content-right">
+        <h3 style="font-size: 22px; color: #7FB3D3; margin-bottom: 15px; font-weight: 600;">Mindfulness vs. Over-identification</h3>
+        
+        <table class="mindful-vs-over">
+          <thead>
+            <tr>
+              <th>Mindfulness</th>
+              <th>Over-identification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Observing thoughts and feelings</td>
+              <td>Being consumed by thoughts and feelings</td>
+            </tr>
+            <tr>
+              <td>Balanced awareness</td>
+              <td>Exaggerated reactions</td>
+            </tr>
+            <tr>
+              <td>"I feel sad"</td>
+              <td>"I AM sadness"</td>
+            </tr>
+            <tr>
+              <td>Creates space for response</td>
+              <td>Triggers automatic reactions</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="practice-tip">
+          <h4 class="practice-tip-title">
+            <i class="fas fa-lightbulb"></i>
+            Practice Tip
+          </h4>
+          <p class="practice-tip-text">When you notice difficult emotions arising, try naming them: "I notice anxiety is present" rather than "I'm anxious." This creates a small but powerful space between you and the emotion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

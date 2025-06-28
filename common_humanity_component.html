@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Humanity – We're All in This Together</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #F9F7F4;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slide-header {
+      padding: 30px 50px 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .component-icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    
+    .slide-title {
+      color: #A8C09A;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    
+    .slide-content {
+      flex: 1;
+      padding: 0 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    
+    .content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .slide-text {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .humanity-box {
+      background-color: rgba(168, 192, 154, 0.15);
+      border-left: 5px solid #A8C09A;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .humanity-title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #A8C09A;
+      font-size: 22px;
+    }
+    
+    .list-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .list-item i {
+      color: #A8C09A;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    
+    .list-content {
+      flex: 1;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      color: #4A7C7E;
+      margin: 20px 0;
+      padding: 0 20px;
+      border-left: 3px solid #A8C09A;
+    }
+    
+    .practice-tip {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-top: 20px;
+    }
+    
+    .practice-tip-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #4A7C7E;
+      font-size: 20px;
+    }
+    
+    .practice-tip-title i {
+      margin-right: 10px;
+      color: #A8C09A;
+    }
+    
+    .practice-tip-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .humanity-vs-isolation {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .humanity-vs-isolation th {
+      background-color: #A8C09A;
+      color: white;
+      padding: 12px 15px;
+      text-align: center;
+      font-weight: 600;
+    }
+    
+    .humanity-vs-isolation td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #E8E6E3;
+    }
+    
+    .humanity-vs-isolation tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .humanity-vs-isolation tr:nth-child(odd) td {
+      background-color: rgba(168, 192, 154, 0.05);
+    }
+    
+    .humanity-vs-isolation tr:nth-child(even) td {
+      background-color: rgba(168, 192, 154, 0.1);
+    }
+    
+    .connection-image {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .connection-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="slide-header">
+      <img src="./icons/common_humanity_icon.png" alt="Common humanity icon" class="component-icon">
+      <h1 class="slide-title">Common Humanity – We're All in This Together</h1>
+    </div>
+    
+    <div class="slide-content">
+      <div class="content-left">
+        <p class="slide-text">Common humanity is recognizing that suffering is part of the shared human experience, not something that happens to "me" alone.</p>
+        
+        <div class="humanity-box">
+          <h3 class="humanity-title">What is Common Humanity?</h3>
+          <p class="slide-text">The understanding that imperfection, failure, and suffering are universal experiences that connect us to others rather than separate us.</p>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-users"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Connection:</strong> Recognizing our shared humanity helps us feel less isolated in our struggles.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <i class="fas fa-heart"></i>
+          <div class="list-content">
+            <p class="slide-text"><strong>Perspective:</strong> Seeing our experiences as part of being human helps reduce shame and self-judgment.</p>
+          </div>
+        </div>
+        
+        <p class="quote">"Suffering is part of life."</p>
+      </div>
+      
+      <div class="content-right">
+        <h3 style="font-size: 22px; color: #A8C09A; margin-bottom: 15px; font-weight: 600;">Common Humanity vs. Isolation</h3>
+        
+        <table class="humanity-vs-isolation">
+          <thead>
+            <tr>
+              <th>Common Humanity</th>
+              <th>Isolation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"We all struggle sometimes"</td>
+              <td>"I'm the only one who fails"</td>
+            </tr>
+            <tr>
+              <td>Connects us to others</td>
+              <td>Separates us from others</td>
+            </tr>
+            <tr>
+              <td>Reduces shame</td>
+              <td>Increases shame</td>
+            </tr>
+            <tr>
+              <td>Opens us to support</td>
+              <td>Leads to hiding and withdrawal</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="practice-tip">
+          <h4 class="practice-tip-title">
+            <i class="fas fa-lightbulb"></i>
+            Practice Tip
+          </h4>
+          <p class="practice-tip-text">When you're struggling, try asking yourself: "How many other people might be experiencing something similar right now?" This simple question can help shift from isolation to connection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
