@@ -16,9 +16,20 @@
       height: 100vh;
       margin: 0;
       text-align: center;
+      position: relative;
     }
     .loading {
       font-size: 24px;
+    }
+    .compassion-gif {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 150px;
+      height: auto;
+      opacity: 0.8;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -27,7 +38,10 @@
     <p>Loading Self-Compassion Slideshow...</p>
     <p><a href="complete_slideshow.html" style="color: #7FB3D3;">Click here if not redirected automatically</a></p>
   </div>
-  
+
+  <!-- Compassion GIF in bottom right corner -->
+  <img src="compassion.gif" alt="Compassion animation" class="compassion-gif">
+
   <script>
     // Redirect to the main slideshow
     window.location.href = 'complete_slideshow.html';
