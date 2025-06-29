@@ -19,17 +19,33 @@
       position: relative;
     }
     .loading {
-      font-size: 24px;
+      font-size: 18px;
+      padding: 0 20px;
     }
     .compassion-gif {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 150px;
+      bottom: 10px;
+      right: 10px;
+      width: 80px;
       height: auto;
       opacity: 0.8;
-      border-radius: 10px;
+      border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      .compassion-gif {
+        bottom: 20px;
+        right: 20px;
+        width: 150px;
+        border-radius: 10px;
+      }
+
+      .loading {
+        font-size: 24px;
+        padding: 0;
+      }
     }
   </style>
 </head>
