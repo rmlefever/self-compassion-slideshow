@@ -1,0 +1,6 @@
+# Netlify redirects file
+# Redirect root to the main slideshow
+/  /complete_slideshow.html  200
+
+# Ensure all HTML files are served with correct MIME type
+/*.html  /complete_slideshow.html  200

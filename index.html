@@ -3,79 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rewriting the Inner Script: Self-Compassion & Internal Dialogue</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Self-Compassion Slideshow</title>
+  <meta http-equiv="refresh" content="0; url=complete_slideshow.html">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-    
-    .slide-container {
-      width: 1280px;
-      min-height: 720px;
+    body {
       font-family: 'Open Sans', sans-serif;
-      color: #ffffff;
-      overflow: hidden;
-      position: relative;
+      background: #000;
+      color: white;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      margin: 0;
       text-align: center;
     }
-    
-    .background-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-    
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: -1;
-    }
-    
-    .title {
-      font-size: 72px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      max-width: 80%;
-      line-height: 1.2;
-    }
-    
-    .subtitle {
-      font-size: 36px;
-      font-weight: 400;
-      margin-bottom: 40px;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-      max-width: 80%;
-    }
-    
-    .presenter {
+    .loading {
       font-size: 24px;
-      font-weight: 400;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
 <body>
-  <div class="slide-container">
-    <img src="./backgrounds/ocean_waves.jpg" alt="Calming ocean waves" class="background-image">
-    <div class="overlay"></div>
-    
-    <h1 class="title">Rewriting the Inner Script</h1>
-    <h2 class="subtitle">Self-Compassion & Internal Dialogue</h2>
-    <p class="presenter">A Psychoeducational Group Session</p>
+  <div class="loading">
+    <p>Loading Self-Compassion Slideshow...</p>
+    <p><a href="complete_slideshow.html" style="color: #7FB3D3;">Click here if not redirected automatically</a></p>
   </div>
+  
+  <script>
+    // Redirect to the main slideshow
+    window.location.href = 'complete_slideshow.html';
+  </script>
 </body>
 </html>
-
