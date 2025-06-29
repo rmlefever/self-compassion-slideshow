@@ -1,12 +1,36 @@
 # Self-Compassion Slideshow
 
-This folder contains a complete self-compassion presentation with 19 slides.
+This repository contains a complete self-compassion presentation with 19 slides, available both as individual HTML files and as a unified interactive slideshow.
 
-## How to View the Slides
+## 🎯 Quick Start
 
-1. Open any HTML file in a web browser (Chrome, Firefox, Safari, etc.)
-2. Each slide is a separate HTML file that you can view individually
-3. Keep all files and folders together - don't move the backgrounds/ or icons/ folders
+**For presentations**: Open `complete_slideshow.html` in your browser for the full interactive slideshow experience.
+
+**For individual viewing**: Open any individual HTML file in a web browser.
+
+## 📁 Files Overview
+
+- **`complete_slideshow.html`** - ⭐ **Main interactive slideshow** with navigation, beautiful backgrounds, and all 19 slides
+- **Individual slide files** - Separate HTML files for each slide
+- **`backgrounds/`** - Background images for slides
+- **`icons/`** - Icons for the three elements of self-compassion
+
+## 🎨 Features
+
+- 🖱️ **Interactive navigation** with arrow keys and buttons
+- 🌅 **Beautiful background images** on title and closing slides
+- 📱 **Responsive design** that works on different screen sizes
+- 🎯 **Professional styling** with calming color scheme
+- 📊 **Slide counter** showing current position
+
+## 🎮 How to Use the Interactive Slideshow
+
+1. Open `complete_slideshow.html` in any modern web browser
+2. Navigate using:
+   - **Arrow Keys**: ← → to move between slides
+   - **Navigation Buttons**: Click the arrow buttons on screen
+   - **Keyboard Shortcuts**: Home (first slide), End (last slide)
+3. Press F11 for full-screen presentation mode
 
 ## Slide Order
 
