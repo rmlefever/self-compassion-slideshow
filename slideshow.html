@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Compassion Slideshow</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #000;
+      overflow: hidden;
+    }
+    
+    .slideshow-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .slide {
+      display: none;
+      width: 1280px;
+      height: 720px;
+      max-width: 90vw;
+      max-height: 90vh;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .slide.active {
+      display: block;
+    }
+    
+    .slide-container {
+      width: 100%;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Navigation */
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(74, 124, 126, 0.8);
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    
+    .nav-button:hover {
+      background: rgba(74, 124, 126, 1);
+    }
+    
+    .nav-button:disabled {
+      background: rgba(74, 124, 126, 0.3);
+      cursor: not-allowed;
+    }
+    
+    .prev {
+      left: 20px;
+    }
+    
+    .next {
+      right: 20px;
+    }
+    
+    .slide-counter {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(74, 124, 126, 0.8);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1000;
+    }
+    
+    .keyboard-hint {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+    
+    /* Loading indicator */
+    .loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      z-index: 1001;
+    }
+    
+    .slide iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">Loading slideshow...</div>
+  
+  <div class="slideshow-container" id="slideshow" style="display: none;">
+    <!-- Slides will be loaded here -->
+  </div>
+
+  <!-- Navigation -->
+  <button class="nav-button prev" id="prevBtn" onclick="changeSlide(-1)">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="nav-button next" id="nextBtn" onclick="changeSlide(1)">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <!-- Slide counter -->
+  <div class="slide-counter">
+    <span id="current-slide">1</span> / <span id="total-slides">0</span>
+  </div>
+
+  <!-- Keyboard hint -->
+  <div class="keyboard-hint">
+    Use ← → arrow keys or click buttons to navigate
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    let slides = [];
+    let totalSlides = 0;
+
+    // Initialize slideshow with direct content
+    function initSlideshow() {
+      const slideshowContainer = document.getElementById('slideshow');
+      const loadingElement = document.getElementById('loading');
+
+      // Create slides directly in the container
+      createSlides(slideshowContainer);
+
+      slides = document.querySelectorAll('.slide');
+      totalSlides = slides.length;
+      document.getElementById('total-slides').textContent = totalSlides;
+
+      // Hide loading and show slideshow
+      loadingElement.style.display = 'none';
+      slideshowContainer.style.display = 'flex';
+
+      updateNavigation();
+    }
+
+    function createSlides(container) {
+      // We'll add the slide creation logic here
+      // For now, create a simple structure that can be expanded
+      const slideData = [
+        {
+          type: 'title',
+          title: 'Rewriting the Inner Script',
+          subtitle: 'Self-Compassion & Internal Dialogue',
+          presenter: 'A Psychoeducational Group Session',
+          background: './backgrounds/ocean_waves.jpg'
+        }
+      ];
+
+      slideData.forEach((data, index) => {
+        const slideDiv = document.createElement('div');
+        slideDiv.className = 'slide';
+        if (index === 0) slideDiv.classList.add('active');
+
+        slideDiv.innerHTML = createSlideContent(data);
+        container.appendChild(slideDiv);
+      });
+    }
+
+    function createSlideContent(data) {
+      if (data.type === 'title') {
+        return `
+          <div class="slide-container" style="
+            width: 100%; height: 100%; font-family: 'Open Sans', sans-serif; color: #ffffff;
+            overflow: hidden; position: relative; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+          ">
+            <img src="${data.background}" alt="Background" style="
+              position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              object-fit: cover; z-index: -1;
+            ">
+            <div style="
+              position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              background: rgba(0, 0, 0, 0.4); z-index: -1;
+            "></div>
+            <h1 style="
+              font-size: 72px; font-weight: 700; margin-bottom: 20px;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); max-width: 80%; line-height: 1.2;
+            ">${data.title}</h1>
+            <h2 style="
+              font-size: 36px; font-weight: 400; margin-bottom: 40px;
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); max-width: 80%;
+            ">${data.subtitle}</h2>
+            <p style="
+              font-size: 24px; font-weight: 400;
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            ">${data.presenter}</p>
+          </div>
+        `;
+      }
+      return '';
+    }
+    
+    function showSlide(n) {
+      if (slides.length === 0) return;
+      
+      slides[currentSlide].classList.remove('active');
+      currentSlide = Math.max(0, Math.min(n, totalSlides - 1));
+      slides[currentSlide].classList.add('active');
+      document.getElementById('current-slide').textContent = currentSlide + 1;
+      updateNavigation();
+    }
+    
+    function changeSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+    
+    function updateNavigation() {
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft' && currentSlide > 0) {
+        changeSlide(-1);
+      } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+        changeSlide(1);
+      } else if (e.key === 'Home') {
+        showSlide(0);
+      } else if (e.key === 'End') {
+        showSlide(totalSlides - 1);
+      }
+    });
+    
+    // Initialize slideshow when page loads
+    window.addEventListener('load', initSlideshow);
+  </script>
+</body>
+</html>
