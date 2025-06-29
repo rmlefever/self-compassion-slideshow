@@ -345,6 +345,29 @@
       background-color: #F9F7F4;
       color: #333333;
     }
+
+    /* Compassion GIF on title slide */
+    .title-slide-gif {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 80px;
+      height: auto;
+      opacity: 0.8;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Desktop GIF size */
+    @media (min-width: 768px) {
+      .title-slide-gif {
+        bottom: 25px;
+        right: 25px;
+        width: 120px;
+        border-radius: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -359,6 +382,8 @@
           <h2 class="subtitle">Self-Compassion & Internal Dialogue</h2>
           <p class="presenter">A Psychoeducational Group Session</p>
         </div>
+        <!-- Compassion GIF in bottom right corner -->
+        <img src="compassion.gif" alt="Compassion animation" class="title-slide-gif">
       </div>
     </div>
 
